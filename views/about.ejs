@@ -16,17 +16,17 @@
       }
 
       nav {
-        background: linear-gradient(to right, #ffb75e, #ed8f03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+        background: linear-gradient(to right, #BB2DBC, #BB2DBC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
       }
 
-      .vertical-center {
+      .page-header {
         border-radius: none;
         display: flex;
         align-items: center;
-        height: 100vh;
+        height: 25vh;
         text-align: center;
         /* background: black; */
-        background: linear-gradient(to right, #ffb75e, #ed8f03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-color: #BB2DBC;
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: cover;
@@ -68,7 +68,7 @@
 
       h1 {
         font-family: 'Press Start 2P';
-        font-size: 4em;
+        font-size: 3em;
       }
 
       h4 {
@@ -81,10 +81,19 @@
         padding-bottom: 100px;
       }
 
+      .picture-container {
+        display: flex;
+        align-content: center;
+      }
+
       .section-header {
         text-align: center;
         font-family: "Press Start 2P";
         color: #C84C0C;
+      }
+
+      .subtitle {
+        text-align: center;
       }
 
       .title {
@@ -101,7 +110,7 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Duck Pond</a>
+      <a class="navbar-brand" href="/">Duck Pond</a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
@@ -116,6 +125,27 @@
         </ul>
       </div>
     </nav>
+
+    <div class="jumbotron-fluid page-header">
+      <div class="container">
+        <h1>About Duck Pond</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container main-content">
+        <h3 class="subtitle"><em>"The dive bar at the end of the world"</em></h3><br><hr><br>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet est placerat in egestas. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. In est ante in nibh mauris. Diam vel quam elementum pulvinar etiam non quam. Mi quis hendrerit dolor magna eget est lorem. Eget nullam non nisi est. Integer quis auctor elit sed vulputate mi. Dui vivamus arcu felis bibendum ut tristique et egestas. Tellus at urna condimentum mattis pellentesque. Arcu dui vivamus arcu felis bibendum ut tristique et.</p>
+            <p>Adipiscing tristique risus nec feugiat in. Enim nulla aliquet porttitor lacus. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Donec adipiscing tristique risus nec feugiat. Orci dapibus ultrices in iaculis nunc sed augue. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Senectus et netus et malesuada fames ac. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Ullamcorper eget nulla facilisi etiam dignissim. Ut lectus arcu bibendum at.</p>
+          </div>
+          <div class="col-md-6 picture-container">
+            <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/21318865_10100859533944301_391333309412446145_o.jpg?oh=83309fd1b7cec765ca450e22af7e4357&oe=5AEF0281" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 
