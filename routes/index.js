@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var emails = require('../emails');
 
 // Get home page
 router.get('/', function(req, res, next) {
   res.render('index');
+  console.log(emails.emails.includes('dan.shapiro1210@gmail.com'));
 });
 
 // GET about page
