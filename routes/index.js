@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json()
 
 var emails = require('../emails');
+var password = require('../password');
 
 
 // Get home page
@@ -31,6 +32,11 @@ router.get('/login', function(req, res, next) {
 router.post('/login', jsonParser, function(req, res, next) {
 	var inputEmail = req.body['user[email]'];
 	console.log(emails.emails.includes(inputEmail));
+  if (emails.emails.includes(inputEmail)) {
+    res.render('loggedInLanding');
+  } else {
+    res.render('error');
+  }
 });
 
 module.exports = router;
