@@ -31,8 +31,10 @@ router.get('/login', function(req, res, next) {
 
 router.post('/login', jsonParser, function(req, res, next) {
 	var inputEmail = req.body['user[email]'];
-	console.log(emails.emails.includes(inputEmail));
-  if (emails.emails.includes(inputEmail)) {
+  var inputPassword = req.body['user[password]']
+	// console.log(emails.emails.includes(inputEmail));
+ //  console.log(password.password);
+  if (emails.emails.includes(inputEmail) && password.password === inputPassword) {
     res.render('loggedInLanding');
   } else {
     res.render('error');
