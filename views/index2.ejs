@@ -11,6 +11,19 @@
 				background-image: url("https://raw.githubusercontent.com/dshaps10/duckpond_website/master/background_img.png");
 			}
 
+			.sidenav {
+			    height: 100%; /* Full-height: remove this if you want "auto" height */
+			    width: 52px;
+			    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+			    z-index: 1; /* Stay on top */
+			    top: 0; /* Stay at the top */
+			    left: 0;
+			    background-color: #111; /* Black */
+			    overflow-x: hidden; /* Disable horizontal scroll */
+			    padding-top: 20px;
+			    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.5);
+			}
+
 			h1 {
 				position: relative;
 				margin-top: 25%;
@@ -53,6 +66,12 @@
 		</style>
 	</head>
 	<body>
+		<div class="sidenav">
+  			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</div>
 		<header>
 			<nav>
 				<img src="https://raw.githubusercontent.com/dshaps10/duckpond_website/master/DP%20Swap.png" id="duckpond-logo" class="header-child">
