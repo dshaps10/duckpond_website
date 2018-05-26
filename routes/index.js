@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
 
 // GET about page
 router.get('/about', function(req, res, next) {
-  res.render('about');
+  res.render('about2');
 });
 
 // GET FAQ page

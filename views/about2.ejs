@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -8,22 +7,13 @@
 
     <style type="text/css">
     	body {
-    		background-image: url("https://raw.githubusercontent.com/dshaps10/duckpond_website/master/background_img.png");
-    	}
-
-    	h1 {
-			width: 559px;
-			color: #FFFFFF;
-			font-family: Montserrat;
-			font-size: 20px;
-			font-weight: bold;
-			letter-spacing: 4px;
-			line-height: 24px;
+    		background: black;
     	}
 
         hr {
             border: 1.25px solid white;
         }
+
 
 
         .content-container {
@@ -86,6 +76,32 @@
     		width: 100%;
     	}
 
+        .main-content > h2 {
+        	position: absolute;
+    		bottom: 0;
+    		right: 0;
+            height: 238px;
+            width: 748px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 34px;
+        }
+
+    	.main-content > p {
+    		position: absolute;
+    		bottom: 100px;
+    		right: 0;
+            height: 238px;
+            width: 748px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 34px;
+        }
+
         .nav-link > h2 {
             font-family: "Press Start 2P";
             font-size: 0.75em;
@@ -95,12 +111,21 @@
             font-size: 0.6em;
         }
 
+        .section-title {
+			height: 150px;
+			width: 813px;
+			color: #232323;
+			font-family: "Press Start 2P";
+			font-size: 150px;
+			letter-spacing: 12.5px;
+			line-height: 150px;
+		}
+
     	.sidebar {
     		/*border: 2px solid white;*/
     		height: 100%;
     		max-width: 50px;
-    		background-color: #111;
-    		box-shadow: 0 2px 10px 0 rgba(0,0,0,0.5);
+    		background: none;
     	}
 
         #sidebar-hr {
@@ -120,19 +145,11 @@
             left: 56px;
     	}
     </style>
-
 </head>
-
 <body>
 	<div class="container main-container">
 		<div class="row content-container">
 			<div class="sidebar col-md-1">
-				<div class="link-group">
-					<a href="https://www.instagram.com/duck.pond/" target="blank"><img src="https://nutsacbags.com/wp-content/uploads/instagram-white.png" width="20px" height="20px"></a><br><br>
-                    <a href="https://www.facebook.com/groups/DuckPondBRC/" target="blank"><img src="https://raw.githubusercontent.com/dshaps10/duckpond_website/master/facebook-3-32.png" width="20px" height="20px"></a><br><br>
-                    <hr id="sidebar-hr"><br>
-					<a href="/login" target="blank" id="login">QUACK</a>
-				</div>
 			</div>
 			<div class="sub-container col-md-11">
                 <div class="highlights">
@@ -168,12 +185,14 @@
                         </a>
                     </div>
     				<div class="title">
-    					<h1>THE DIVE BAR AT THE <br> END OF THE WORLD</h1>
+    					<h1 class="section-title">ABOUT</h1>
     				</div>
+    			</div>
+                <div class="main-content">
+                    <p>A thick fog blanketed the city, casting a hazy glow of streetlights over the hills and valleys. An enthusiastic crew, perched precariously on their barstools, gathered round a small table in their favorite local dive. Now some say it was the beer, or too much fireball. Others still claim it was a vision, an apparation if you will. No matter what you want to believe about that night, a goddamn duck walked into that bar and ordered a  Pabst Blue Ribbon. The rest is history.</p>
                 </div>
             </div>  
 		</div>
 	</div>
 </body>
-
 </html>
