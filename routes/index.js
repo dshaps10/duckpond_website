@@ -10,7 +10,7 @@ var password = require('../password');
 
 // Get home page
 router.get('/', function(req, res, next) {
-  res.render('index3');
+  res.render('index');
   console.log(emails.emails.includes('dan.shapiro1210@gmail.com'));
 });
 
