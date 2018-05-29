@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -27,84 +28,20 @@
     <![endif]-->
 
     <style type="text/css">
-      nav {
-        background: linear-gradient(to right, #ffb75e, #ed8f03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+      body {
+        background-color: black;
       }
 
-      .vertical-center {
-        border-radius: none;
-        display: flex;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-        /* background: black; */
-        background: linear-gradient(to right, #ffb75e, #ed8f03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: cover;
-        color: white;
-      }
-
-      .vertical-center img {
-        height: 500px;
-        width: 500px;
-        animation: appear 4s;
-      }
-
-      .footer {
-        padding: 10px;
-        background-color: #d9d9d9;
-      }
-
-      .main-content {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-
-      .about-box {
-        padding: 15px;
-      }
-
-      #next-event {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://github.com/dshaps10/duckpond.github.io/blob/master/event_pic.jpg?raw=true");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-
-      #event-info {
-        text-align: center;
-        color: white;
-        /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./event_pic.jpg"); */
-        padding: 10px;
-      }
-
-      h1 {
-        font-family: 'Press Start 2P';
-        font-size: 4em;
-      }
-
-      h2 {
-        text-align: center;
-      }
-
-      h4 {
-        text-align: center;
-        font-size: 1em;
-      }
-
-      .music {
-        padding-top: 50px;
-        padding-bottom: 100px;
-      }
-
-      .section-header {
-        text-align: center;
-        font-family: "Press Start 2P";
-        color: #C84C0C;
+      .form-signin {
+        margin-top: 100px;
       }
 
       .title {
+        text-align: center;
+        color: #232323;
         font-family: "Press Start 2P";
+        font-size: 4em;
+        line-height: 150px;
       }
     </style>
 
@@ -112,10 +49,10 @@
 
   <body>
 
-    <div class="container">
+    <div class="container form-container">
 
       <form class="form-signin" method="post" action="/login">
-        <h2 class="form-signin-heading">Log In to Member Portal (UNDER CONSTRUCTION)</h2><br>
+        <h2 class="title">Log In</h2><br>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="user[email]" required autofocus><br>
         <label for="inputPassword" class="sr-only">Password</label>
