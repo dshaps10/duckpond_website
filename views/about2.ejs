@@ -14,12 +14,21 @@
             border: 1.25px solid white;
         }
 
-
+        td {
+            border: 20px solid black;
+            background-image: url('https://raw.githubusercontent.com/dshaps10/duckpond_website/master/josiah-weiss-479909-unsplash.jpg');
+            background-size: cover;
+        }
 
         .content-container {
             height: 100%;
             width: 100%;    
-        }   
+        }  
+
+        .crosshairs {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        } 
 
 
         .highlights {
@@ -43,6 +52,11 @@
         .hotlinks > a:hover {
             color: #A9A9A9
             ;
+        }
+
+        .instagram-imgs {
+            width: 100%;
+            height: 500px;
         }
 
         .link-group {
@@ -71,25 +85,12 @@
         }
 
     	.main-container {
-    		position: fixed;
+    		position: absolute;
     		height: 100%;
     		width: 100%;
     	}
 
-        .main-content > h2 {
-        	position: absolute;
-    		bottom: 0;
-    		right: 0;
-            height: 238px;
-            width: 748px;
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 34px;
-        }
-
-    	.main-content > p {
+    	.main-content > div {
     		position: absolute;
     		bottom: 100px;
     		right: 0;
@@ -131,6 +132,15 @@
         #sidebar-hr {
             transform: rotate(90deg);
         }
+
+        .social-follow > h2 {
+            font-family: "Press Start 2P";
+        }  
+
+        .social-headline {
+            display: inline-block;
+            font-size: 1.25em;
+        } 
 
         .sub-container {
             position: relative;
@@ -189,7 +199,29 @@
     				</div>
     			</div>
                 <div class="main-content">
-                    <p>A thick fog blanketed the city, casting a hazy glow of streetlights over the hills and valleys. An enthusiastic crew, perched precariously on their barstools, gathered round a small table in their favorite local dive. Now some say it was the beer, or too much fireball. Others still claim it was a vision, an apparation if you will. No matter what you want to believe about that night, a goddamn duck walked into that bar and ordered a  Pabst Blue Ribbon. The rest is history.</p>
+                    <div>
+                        <p>A thick fog blanketed the city, casting a hazy glow of streetlights over the hills and valleys. An enthusiastic crew, perched precariously on their barstools, gathered round a small table in their favorite local dive. Now some say it was the beer, or too much fireball. Others still claim it was a vision, an apparation if you will. No matter what you want to believe about that night, a goddamn duck walked into that bar and ordered a  Pabst Blue Ribbon. The rest is history.</p>
+                        <img src="https://raw.githubusercontent.com/dshaps10/duckpond_website/master/Duck-CrossHairs.png" class="crosshairs">
+                        <div class="social-follow">
+                            <h2 class="social-headline">FOLLOW ALONG</h2><br>
+                            <!-- <a class = "social-headline social-icon" href="#">Instagram</a>
+                            <a class="social-headline social-icon" href="#">Facebook</a> -->
+                            <table class="instagram-imgs">
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <img src="https://raw.githubusercontent.com/dshaps10/duckpond_website/master/Duck-CrossHairs.png" class="crosshairs"><br>
+                            <h2 class="social-headline">WE MAKE COOL SHIT</h2>
+                        </div>
+                    </div>
                 </div>
             </div>  
 		</div>
